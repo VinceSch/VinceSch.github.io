@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" href="RentalStyle.css" type="text/css">
+    <title>Vinava Properties</title>
+  </head>
+  <body onload="checkAdmin()" class="body" style="">
+
+    <a class="button" style="left: 1000px; up: 2000px" href="Main_Page.html">Home</a>
+    <h1 class="h1">Vinava Properties</h1>
+    <h2 id="adminAccess" display="none" class="displayAdmin">Administrator Access</h2>
+
+    <!-- Button to open the modal Calendar -->
+    <button id="schedule" display="none" class ="schedule" onclick="document.getElementById('id03').style.display='block'">Scheduling</button>
+
+    <!-- The Modal -->
+    <div id="id03" class="modal">
+      <span onclick="document.getElementById('id03').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+
+      <!-- Modal Content -->
+      <form class="modal-content animate" action="/action_page.php">
+
+
+    <!-- May -->
+    <div class="myMonth">
+        <a class="prev" onclick="plusMonth(-1)">&#10094;</a>
+        <a class="next" onclick="plusMonth(+1)">&#10095;</a>
+        <div class="month">
+        <ul>
+
+        <li>May<br><span style="font-size:18px">2022</span></li>
+
+        </ul>
+        </div>
+
+        <ul class="weekdays">
+        <li>Su</li>
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        </ul>
+
+        <ol class="days">
+        <li id='1' onclick="changeActive()"><span class="active">1</span></li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li><span class="active">10</span></li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+
+    </ol>
+    </div>
+
+    <!-- June -->
+    <div class="myMonth">
+        <a class="prev" onclick="plusMonth(-1)">&#10094;</a>
+        <a class="next" onclick="plusMonth(+1)">&#10095;</a>
+            <div class="month">
+        <ul>
+
+        <li>June<br><span style="font-size:18px">2022</span></li>
+
+        </ul>
+        </div>
+
+        <ul class="weekdays">
+        <li>Su</li>
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        </ul>
+
+        <ul class="days">
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li><span class="active">10</span></li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+
+
+        </ul>
+    </div>
+
+    <!-- July -->
+    <div class="myMonth">
+        <a class="prev" onclick="plusMonth(-1)">&#10094;</a>
+        <a class="next" onclick="plusMonth(+1)">&#10095;</a>
+            <div class="month">
+        <ul>
+
+        <li>July<br><span style="font-size:18px">2022</span></li>
+
+        </ul>
+        </div>
+
+        <ul class="weekdays">
+        <li>Su</li>
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        </ul>
+
+        <ul class="days">
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li><span class="active">10</span></li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+
+
+        </ul>
+    </div>
+
+    <!-- August -->
+    <div class="myMonth">
+        <a class="prev" onclick="plusMonth(-1)">&#10094;</a>
+        <a class="next" onclick="plusMonth(+1)">&#10095;</a>
+            <div class="month">
+        <ul>
+
+        <li>August<br><span style="font-size:18px">2022</span></li>
+
+        </ul>
+        </div>
+
+        <ul class="weekdays">
+        <li>Su</li>
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        </ul>
+
+        <ul class="days">
+        <li> </li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li><span class="active">10</span></li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+
+
+        </ul>
+    </div>
+
+    <!-- September -->
+    <div class="myMonth">
+        <a class="prev" onclick="plusMonth(-1)">&#10094;</a>
+        <a class="next" onclick="plusMonth(+1)">&#10095;</a>
+            <div class="month">
+        <ul>
+
+        <li>September<br><span style="font-size:18px">2022</span></li>
+
+        </ul>
+        </div>
+
+        <ul class="weekdays">
+        <li>Su</li>
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        </ul>
+
+        <ul class="days">
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li><span class="active">10</span></li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+
+
+        </ul>
+    </div>
+
+    <!-- October -->
+    <div class="myMonth">
+        <a class="prev" onclick="plusMonth(-1)">&#10094;</a>
+        <a class="next" onclick="plusMonth(+1)">&#10095;</a>
+            <div class="month">
+        <ul>
+
+        <li>October<br><span style="font-size:18px">2022</span></li>
+
+        </ul>
+        </div>
+
+        <ul class="weekdays">
+        <li>Su</li>
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        </ul>
+
+        <ul class="days">
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li><span class="active">10</span></li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+
+
+        </ul>
+    </div>
+
+    <!-- November -->
+    <div class="myMonth">
+        <a class="prev" onclick="plusMonth(-1)">&#10094;</a>
+        <a class="next" onclick="plusMonth(+1)">&#10095;</a>
+            <div class="month">
+        <ul>
+
+        <li>November<br><span style="font-size:18px">2022</span></li>
+
+        </ul>
+        </div>
+
+        <ul class="weekdays">
+        <li>Su</li>
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        </ul>
+
+        <ul class="days">
+        <li> </li>
+        <li> </li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li><span class="active">10</span></li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+
+
+        </ul>
+    </div>
+
+    <!-- December -->
+    <div class="myMonth">
+        <a class="prev" onclick="plusMonth(-1)">&#10094;</a>
+        <a class="next" onclick="plusMonth(+1)">&#10095;</a>
+            <div class="month">
+        <ul>
+
+        <li>December<br><span style="font-size:18px">2022</span></li>
+
+        </ul>
+        </div>
+
+        <ul class="weekdays">
+        <li>Su</li>
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        </ul>
+
+        <ul class="days">
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li><span class="active">10</span></li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+
+
+        </ul>
+    </div>
+
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Container for the image gallery -->
+    <div class="container">
+
+  <!-- Full-width images with number text -->
+    <div class="mySlides">
+        <div class="numbertext">1 / 16</div>
+        <img src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic1.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">2 / 16</div>
+        <img src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic2.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">3 / 16</div>
+        <img src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic3.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">4 / 16</div>
+        <img src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic4.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">5 / 16</div>
+        <img src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic5.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">6 / 16</div>
+        <img src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic6.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">7 / 16</div>
+        <img src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic7.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">8 / 16</div>
+        <img src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic8.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">9 / 16</div>
+        <img src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic9.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">10 / 16</div>
+        <img src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic10.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">11 / 16</div>
+        <img src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic11.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">12 / 16</div>
+        <img src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic12.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">13 / 16</div>
+        <img src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic13.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">14 / 16</div>
+        <img src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic14.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">15 / 16</div>
+        <img src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic15.webp" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">16 / 16</div>
+        <img src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic16.webp" style="width:100%">
+    </div>
+
+  <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+
+  <!-- Thumbnail images -->
+    <div class="row">
+        <div class="column">
+            <img class="demo cursor" src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic1.webp" style="width:100%" onclick="currentSlide(1)" alt="ShowLow Pic 1">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic2.webp" style="width:100%" onclick="currentSlide(2)" alt="ShowLow Pic 2">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic3.webp" style="width:100%" onclick="currentSlide(3)" alt="ShowLow Pic 3">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic4.webp" style="width:100%" onclick="currentSlide(4)" alt="ShowLow Pic 4">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic5.webp" style="width:100%" onclick="currentSlide(5)" alt="ShowLow Pic 5">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic6.webp" style="width:100%" onclick="currentSlide(6)" alt="ShowLow Pic 6">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic7.webp" style="width:100%" onclick="currentSlide(7)" alt="ShowLow Pic 7">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic8.webp" style="width:100%" onclick="currentSlide(8)" alt="ShowLow Pic 8">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic9.webp" style="width:100%" onclick="currentSlide(9)" alt="ShowLow Pic 9">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic10.webp" style="width:100%" onclick="currentSlide(10)" alt="ShowLow Pic 10">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic11.webp" style="width:100%" onclick="currentSlide(11)" alt="ShowLow Pic 11">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic12.webp" style="width:100%" onclick="currentSlide(12)" alt="ShowLow Pic 12">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic13.webp" style="width:100%" onclick="currentSlide(13)" alt="ShowLow Pic 13">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic14.webp" style="width:100%" onclick="currentSlide(14)" alt="ShowLow Pic 14">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic15.webp" style="width:100%" onclick="currentSlide(15)" alt="ShowLow Pic 15">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="C:\Users\vince\Desktop\CompSci_IA\Website\RentalPics\ShowLowPic16.webp" style="width:100%" onclick="currentSlide(16)" alt="ShowLow Pic 16">
+        </div>
+    </div>
+    </div>
+
+<script>
+var admin;
+
+
+
+
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+
+
+
+
+let monthIndex = 1;
+showMonth(monthIndex);
+
+function plusMonth(n) {
+  showMonth(monthIndex += n);
+}
+
+function currentMonth(n) {
+  showMonth(monthIndex = n);
+}
+
+function showMonth(n) {
+  let i;
+  let month = document.getElementsByClassName("myMonth");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > month.length) {monthIndex = 1}
+  if (n < 1) {monthIndex = month.length}
+  for (i = 0; i < month.length; i++) {
+    month[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  month[monthIndex-1].style.display = "block";
+  dots[monthIndex-1].className += " active";
+  captionText.innerHTML = dots[monthIndex-1].alt;
+}
+
+// Get the modal
+var modal = document.getElementById('id03');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+
+
+
+function checkAdmin() {
+admin = false;
+if (sessionStorage.getItem('uname') != null && sessionStorage.getItem('psw') != null) {
+    admin = true;
+    document.getElementById('adminAccess').style.display = "block";
+    document.getElementById('schedule').style.display = "block";
+} else {
+    admin = false;
+    document.getElementById('adminAccess').style.display = "none";
+
+}
+}
+
+function changeActive() {
+
+    if (admin) {
+        document.getElementById(event.target.id).classList.toggle("active");
+        alert("changing active of " + event.target.id)
+
+    }
+}
+
+</script>
+
+  </body>
+</html>

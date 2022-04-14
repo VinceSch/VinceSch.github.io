@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" href="Main_Page.css" type="text/css">
+    <title>Vinava Properties</title>
+  </head>
+  <body class = "body" style="background-image: url('https://images.unsplash.com/photo-1453694595360-51e193e121fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZmFtaWx5JTIwc2tpaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60');">
+
+    <h1 class="h1">Vinava Properties</h1>
+    <div>
+        <p class="p">-"Our Commitment is your care"</p>
+        <a class="button" style="left: 100px;" href="AllRentals.html">Rentals</a>
+
+        <a class="button" href="Information.html">About Us</a>
+
+
+
+
+
+<!-- Button to open the modal login form -->
+<button class = "button" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form onsubmit="checkCredentials()" class="modal-content animate">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label method="post" for="uname"><b>Username</b></label>
+      <input id="username" type="text" placeholder="Enter Username" required>
+
+
+      <label method="post" for="psw"><b>Password</b></label>
+      <input id="password" type="password" placeholder="Enter Password" required>
+
+
+      <button method="post" onclick="checkCredentials()" class="button" type="submit">Login</button>
+
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+    </div>
+  </form>
+</div>
+
+
+</div>
+
+    <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+//Checks to see if username and password are correct
+function checkCredentials() {
+var uname = document.getElementById('username').value;
+var psw = document.getElementById('password').value;
+let credentialsValid = false;
+
+if (uname == ("gabriel") && psw == ("GoPackers!")) {
+    credentialsValid = true;
+    sessionStorage.setItem("uname", uname);
+    sessionStorage.setItem("psw", psw);
+
+
+} else {
+    alert("Username or Password is incorrect");
+    document.getElementById('username').value = null;
+    document.getElementById('password').value = null;
+}
+}
+
+
+</script>
+  </body>
+</html>
